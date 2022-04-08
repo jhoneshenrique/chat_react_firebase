@@ -26,9 +26,9 @@ function SendMessage({scroll}) {
 
   return (
     <div>
-        <form onSubmit={sendMessage}>
-            <input  style={{ width: '78%', fontSize: '15px', fontWeight: '550', marginLeft: '5px', marginBottom: '-3px' }}  value={msg} onChange={(e)=> setMsg(e.target.value)} placeholder='Message...'/>
-            <button style={{ width: '18%', fontSize: '15px', fontWeight: '550', margin: '4px 5% -13px 5%', maxWidth: '200px'}}  type="submit">Send</button>
+        <form onSubmit={sendMessage} class="input-group input-group-lg">
+            <input class="form-control" style={{ width: '78%', fontSize: '15px', fontWeight: '550', marginLeft: '5px', marginBottom: '-3px' }}  value={msg} onChange={(e)=> setMsg(e.target.value)} placeholder='Message...' />
+            <button style={{ width: '90%', fontSize: '15px', fontWeight: '550', marginTop:'20px', marginLeft:'30px'}} class="btn btn-success" type="submit">Send</button>
         </form>
     </div>
   )
